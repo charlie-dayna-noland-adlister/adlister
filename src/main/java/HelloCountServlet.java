@@ -3,7 +3,7 @@ import java.util.Map;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-@WebServlet(name = "HelloCountServlet", urlPatterns = "/hello/count")
+@WebServlet(urlPatterns = "/hello/count")
 public class HelloCountServlet extends HttpServlet {
     int count;
     @Override

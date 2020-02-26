@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello-world")
+@WebServlet(urlPatterns = "/hello-world")
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
