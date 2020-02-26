@@ -1,11 +1,10 @@
 import java.io.*;
-import java.util.Map;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-@WebServlet(urlPatterns = "/hello/count")
+@WebServlet("/hello/count")
 public class HelloCountServlet extends HttpServlet {
-    int count;
+    private int count;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
