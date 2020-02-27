@@ -1,10 +1,12 @@
-public class Ad {
+package model;
+
+public class AdImp {
     private long id;
     private long userId;
     private String title;
     private String description;
 
-    public Ad(long id, long userId, String title, String description) {
+    public AdImp(long id, long userId, String title, String description) {
         this.id = id;
         this.userId = userId;
         this.title = title;
