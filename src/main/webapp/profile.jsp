@@ -9,8 +9,11 @@
 <html>
 <head>
     <title>Profile</title>
+    <jsp:include page="partials/style.jsp" />
 </head>
 <body>
+    <jsp:include page="partials/navbar.jsp" />
 
+    <jsp:include page="partials/scripts.jsp" />
 </body>
 </html>
