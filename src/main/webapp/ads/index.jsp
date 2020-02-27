@@ -12,7 +12,7 @@
     <title>View Ads</title>
 </head>
 <body>
-<h1>Here are all the adImps:</h1>
+<h1>Here are all the ads:</h1>
 
 <c:forEach var="ad" items="${ads}">
     <div class="ad">

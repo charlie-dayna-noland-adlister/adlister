@@ -1,6 +1,6 @@
 package controller;
 
-import model.AdImp;
+import model.Ad;
 import model.Ads;
 import model.DaoFactory;
 
@@ -16,8 +16,8 @@ import java.util.List;
 public class AdsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Ads adsDao = DaoFactory.getAdsDao();
-        List<AdImp> adImps = adsDao.all();
-        request.setAttribute("ads", adImps);
+        List<Ad> ads = adsDao.all();
+        request.setAttribute("ads", ads);
         request.getRequestDispatcher("/ads/index.jsp").forward(request, response);
     }
 }
