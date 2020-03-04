@@ -2,5 +2,5 @@
 target/
 .idea/
 .DS_Store
-**Config.java
+**/Config.java
 

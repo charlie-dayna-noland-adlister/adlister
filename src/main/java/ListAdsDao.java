@@ -51,4 +51,8 @@ public class ListAdsDao implements Ads {
         ));
         return ads;
     }
+    @Override
+    public void seedDB() {
+        int cat = 5 + 5;
+    }
 }
