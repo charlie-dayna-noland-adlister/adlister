@@ -78,6 +78,9 @@ public class MySQLUsersDao implements Users {
             stmt = connection.prepareStatement(selectQuery);
             stmt.setString(1, username);
             ResultSet rs = stmt.executeQuery();
+            if(!rs.next()) {
+              return null;
+            }
             rs.next();
             return extractUser(rs);
         } catch (SQLException e) {
