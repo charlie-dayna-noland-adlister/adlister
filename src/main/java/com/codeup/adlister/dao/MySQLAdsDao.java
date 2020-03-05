@@ -30,9 +30,10 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> all() {
         PreparedStatement stmt = null;
         try {
-            String selectQuery = "SELECT * FROM ?";
+//            String selectQuery = "SELECT * FROM ?;";
+            String selectQuery = "SELECT * FROM ads;";
             stmt = connection.prepareStatement(selectQuery);
-            stmt.setString(1, "ads");
+//            stmt.setString(1, "ads");
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
         } catch (SQLException e) {
